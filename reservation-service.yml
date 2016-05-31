@@ -1,3 +1,29 @@
+server:
+  port:7777
+  
+spring:
+  jpa:
+    how-sql: true
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    com:
+      netflix:
+        discovery: OFF
+    org:
+      springframework:
+        cloud: INFO
+
+management:
+  port: 2000
+  context-path: /manage
+
+message:
+  name: default
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
